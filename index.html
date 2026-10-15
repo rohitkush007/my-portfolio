@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Futuristic student portfolio showcasing education, skills, projects and achievements.">
+    <meta name="theme-color" content="#05070d">
+    <meta name="color-scheme" content="dark light">
+    <meta property="og:title" content="Rohit Kumar Kushwaha | Student Developer">
+    <meta property="og:description" content="Student portfolio focused on web development, AI and modern technology.">
+    <meta property="og:type" content="website">
+
+    <title>Student Portfolio | Future Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+
+    <a class="skip-link" href="#home">Skip to main content</a>
+
+    <!-- ================= CURSOR ================= -->
+
+    <div class="cursor-dot"></div>
+
+    <!-- ================= LOADER ================= -->
+
+    <div id="loader" class="loader">
+
+        <div class="loader-content">
+
+            <div class="loader-orbit" aria-hidden="true">
+                <span class="loader-orbit-dot"></span>
+                <span class="loader-core">RK</span>
+            </div>
+
+            <div class="loader-logo">
+                <span>&lt;</span>STUDENT<span>/&gt;</span>
+            </div>
+
+            <div class="loader-status">
+                INITIALIZING PORTFOLIO...
+            </div>
+
+            <div class="loader-system" aria-hidden="true">
+                <span>NEURAL INTERFACE</span>
+                <span>VISUAL CORE ONLINE</span>
+                <span>WELCOME, ROHIT</span>
+            </div>
+
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+
+            <div class="loader-percent">0%</div>
+            <div class="loader-scanline" aria-hidden="true"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+        <div class="scroll-progress" aria-hidden="true">
+            <span id="scroll-progress-bar"></span>
+        </div>
+
+        <button class="profile-brand" id="themeToggle" type="button" aria-label="Switch to light theme">
+            <span class="profile-rk">RK</span>
+        </button>
+
+        <nav class="nav-menu">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#journey">Journey</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <a href="#" class="profile-logo" id="profileTrigger" aria-label="Open profile">
+            <img src="images/profile-photo.jpg" alt="Rohit Kumar Kushwaha" class="profile-photo" width="46" height="46"
+                decoding="async">
+        </a>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main id="main-content">
+
+        <section id="home" class="hero section">
+
+            <div class="hero-grid"></div>
+
+            <div class="hero-particles"></div>
+
+            <div class="hero-content">
+
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    AVAILABLE FOR OPPORTUNITIES
+                </div>
+
+                <p class="hero-small">
+                    HELLO, WORLD. I'M
+                </p>
+
+                <h1 class="hero-title">
+                    <span id="student-name">Rohit Kumar Kushwaha</span>
+                </h1>
+
+                <h2 class="hero-role">
+                    Student
+                    <span>•</span>
+                    Developer
+                    <span>•</span>
+                    Technology Enthusiast
+                </h2>
+
+                <p class="hero-description" id="hero-description">
+                    I am a passionate student exploring programming,
+                    web development, artificial intelligence and
+                    modern technology.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#journey" class="btn btn-primary">
+                        Explore My Journey
+                        <span>→</span>
+                    </a>
+
+                    <a href="#projects" class="btn btn-outline">
+                        View Projects
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- 3D OBJECT -->
+
+            <div class="hero-3d">
+
+                <canvas id="three-canvas"></canvas>
+
+                <div class="orbit orbit-1"></div>
+                <div class="orbit orbit-2"></div>
+
+                <div class="floating-label label-1">
+                    &lt;CODE/&gt;
+                </div>
+
+                <div class="floating-label label-2">
+                    AI
+                </div>
+
+                <div class="floating-label label-3">
+                    WEB
+                </div>
+
+            </div>
+
+
+            <div class="scroll-indicator">
+
+                <span>SCROLL TO EXPLORE</span>
+
+                <div class="scroll-line"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="section about-section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">01</span>
+
+                    <div>
+                        <p class="section-label">WHO I AM</p>
+                        <h2>About Me</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-card glass reveal">
+
+                        <div class="card-number">01</div>
+
+                        <h3>My Story</h3>
+
+                        <p id="about-text">
+                            I am a student passionate about technology,
+                            programming and creating useful digital experiences.
+                            I enjoy learning new technologies and turning ideas
+                            into real projects.
+                        </p>
+
+                        <p>
+                            My goal is to continuously improve my technical
+                            knowledge while building projects that solve
+                            real-world problems.
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-info reveal">
+
+                        <div class="info-box glass">
+                            <span>STATUS</span>
+                            <strong>Student / Learner</strong>
+                        </div>
+
+                        <div class="info-box glass">
+                            <span>FOCUS</span>
+                            <strong>Development & Technology</strong>
+                        </div>
+
+                        <div class="info-box glass">
+                            <span>INTERESTS</span>
+                            <strong>AI • Web • Programming</strong>
+                        </div>
+
+                        <div class="info-box glass">
+                            <span>GOAL</span>
+                            <strong>Build Future Technology</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EDUCATION ================= -->
+
+        <section id="education" class="section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">02</span>
+
+                    <div>
+                        <p class="section-label">ACADEMIC PATH</p>
+                        <h2>Education</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="timeline" id="education-timeline">
+
+                    <!-- JavaScript will insert education -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SUBJECTS ================= -->
+
+        <section class="section knowledge-section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">03</span>
+
+                    <div>
+                        <p class="section-label">WHAT I STUDIED</p>
+                        <h2>Knowledge Matrix</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="knowledge-grid" id="knowledge-grid">
+
+                    <!-- JS generated -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section id="skills" class="section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">04</span>
+
+                    <div>
+                        <p class="section-label">TECHNICAL ABILITIES</p>
+                        <h2>Skills</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="skills-grid" id="skills-grid">
+
+                    <!-- JS generated -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= 3D TECHNOLOGY ================= -->
+
+        <section class="section tech-section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">05</span>
+
+                    <div>
+                        <p class="section-label">INTERACTIVE TECHNOLOGY</p>
+                        <h2>My Tech Universe</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="tech-universe">
+
+                    <div id="tech-canvas"></div>
+
+                    <div class="tech-center">
+                        <span>TECH</span>
+                        <strong>UNIVERSE</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= JOURNEY ================= -->
+
+        <section id="journey" class="section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">06</span>
+
+                    <div>
+                        <p class="section-label">MY PROGRESS</p>
+                        <h2>Coding Journey</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="journey-list" id="journey-list">
+
+                    <!-- JS generated -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STATISTICS ================= -->
+
+        <section class="section statistics-section">
+
+            <div class="container">
+
+                <div class="stats-grid">
+
+                    <div class="stat glass reveal">
+                        <strong data-count="15">0</strong>
+                        <span>PROJECTS</span>
+                    </div>
+
+                    <div class="stat glass reveal">
+                        <strong data-count="20">0</strong>
+                        <span>TECHNOLOGIES</span>
+                    </div>
+
+                    <div class="stat glass reveal">
+                        <strong data-count="8">0</strong>
+                        <span>CERTIFICATES</span>
+                    </div>
+
+                    <div class="stat glass reveal">
+                        <strong data-count="4">0</strong>
+                        <span>YEARS LEARNING</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section id="projects" class="section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">07</span>
+
+                    <div>
+                        <p class="section-label">WHAT I'VE BUILT</p>
+                        <h2>Projects</h2>
+                    </div>
+
+                </div>
+
+                <div class="project-filters" id="project-filters" aria-label="Filter projects">
+                    <button class="filter-button active" type="button" data-filter="all">ALL</button>
+                    <button class="filter-button" type="button" data-filter="web">WEB</button>
+                    <button class="filter-button" type="button" data-filter="javascript">JAVASCRIPT</button>
+                    <button class="filter-button" type="button" data-filter="ai">AI</button>
+                </div>
+
+
+                <div class="projects-grid" id="projects-grid">
+
+                    <!-- JS generated -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CERTIFICATES ================= -->
+
+        <section id="certificates" class="section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">08</span>
+
+                    <div>
+                        <p class="section-label">ACHIEVEMENTS</p>
+                        <h2>Certificates</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="certificates-grid" id="certificates-grid">
+
+                    <!-- JS generated -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RESUME ================= -->
+
+        <section class="section resume-section">
+
+            <div class="container">
+
+                <div class="resume-card glass reveal">
+
+                    <div>
+
+                        <span class="section-label">
+                            DOCUMENTATION
+                        </span>
+
+                        <h2>Want to know more?</h2>
+
+                        <p>
+                            Download my resume to explore my complete
+                            academic and technical journey.
+                        </p>
+
+                    </div>
+
+                    <a href="assets/resume/resume.pdf" class="btn btn-primary" download>
+
+                        Download Resume
+                        <span>↓</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact" class="section contact-section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">09</span>
+
+                    <div>
+                        <p class="section-label">GET IN TOUCH</p>
+                        <h2>Contact Me</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+                    <div class="contact-info reveal">
+
+                        <h3>
+                            Let's build something
+                            <span>interesting.</span>
+                        </h3>
+
+                        <p>
+                            Have a project idea, internship opportunity,
+                            collaboration or simply want to connect?
+                            Feel free to send me a message.
+                        </p>
+
+
+                        <div class="contact-links">
+
+                            <a href="mailto:rohit972159@gmail.com" aria-label="Email Rohit Kumar Kushwaha">
+                                <span>EMAIL</span>
+                                rohit972159@gmail.com
+                            </a>
+                            <button class="copy-email" type="button" data-email="rohit972159@gmail.com">
+                                COPY EMAIL
+                            </button>
+
+                            <a href="https://github.com/rohitkush007" target="_blank" rel="noopener noreferrer"
+                                aria-label="Open Rohit's GitHub profile">
+                                <span>GITHUB</span>
+                                github.com/rohitkush007
+                            </a>
+
+                            <a href="https://wa.me/919721592561" target="_blank" rel="noopener noreferrer"
+                                aria-label="Contact Rohit on WhatsApp">
+                                <span>WHATSAPP</span>
+                                +91 9721592561
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <form class="contact-form glass reveal" id="contact-form" action="mailto:rohit972159@gmail.com"
+                        method="POST" enctype="text/plain">
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Name
+                            </label>
+
+                            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input type="email" id="email" name="email" placeholder="your@email.com"
+                                autocomplete="email" required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Subject
+                            </label>
+
+                            <input type="text" id="subject" name="subject" placeholder="Project / Collaboration"
+                                autocomplete="off">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message..."
+                                autocomplete="off" required></textarea>
+
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary submit-btn">
+
+                            Send Message
+                            <span>→</span>
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <p>
+                Designed & built with curiosity.
+            </p>
+
+            <p>
+                © <span id="year"></span>
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/data.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/three-scene.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Emergency loader fallback
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                const loader = document.getElementById("loader");
+
+                if (loader) {
+                    loader.classList.add("loaded");
+                }
+            }, 3300);
+        });
+
+        // Safety fallback:
+        // Agar koi JavaScript error aa jaye tab bhi loader hat jayega.
+        setTimeout(function () {
+            const loader = document.getElementById("loader");
+
+            if (loader) {
+                loader.classList.add("loaded");
+            }
+        }, 6500);
+    </script>
+
+
+
+    <!-- PROFILE OVERLAY -->
+    <div class="detail-modal" id="detailModal" aria-hidden="true">
+        <div class="detail-modal-panel" role="dialog" aria-modal="true" aria-labelledby="detailModalTitle">
+            <button class="detail-modal-close" id="detailModalClose" type="button" aria-label="Close details">×</button>
+            <span class="section-label" id="detailModalLabel">PROJECT DETAILS</span>
+            <h2 id="detailModalTitle"></h2>
+            <p id="detailModalText"></p>
+            <div class="detail-modal-meta" id="detailModalMeta"></div>
+        </div>
+    </div>
+
+    <div class="profile-overlay" id="profileOverlay">
+
+        <div class="profile-panel">
+
+            <!-- Close -->
+            <button class="profile-close" id="profileClose" aria-label="Close profile">
+
+            </button>
+
+            <!-- Photo -->
+            <div class="profile-large-photo-wrap">
+
+                <div class="profile-glow"></div>
+
+                <img src="images/profile-photo.jpg" alt="Rohit Kumar Kushwaha" class="profile-large-photo" width="200"
+                    height="200" loading="lazy" decoding="async">
+
+            </div>
+
+            <div class="personal-details">
+
+                <div class="personal-detail">
+                    <span>Date of Birth</span>
+                    <strong>23/11/2007</strong>
+                </div>
+
+                <div class="personal-detail">
+                    <span>Address</span>
+                    <strong>Gram-Malichhapar, Post-Bhatpar Rani, District-Deoria, Pin Code-274702, Uttar
+                        Pradesh</strong>
+                </div>
+
+                <div class="personal-detail">
+                    <span>Phone</span>
+                    <a href="tel:9721592561">9721592561</a>
+                </div>
+
+                <div class="personal-detail">
+                    <span>Email</span>
+                    <a href="mailto:rohit972159@gmail.com">rohit972159@gmail.com</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
